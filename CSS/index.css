@@ -1,6 +1,8 @@
 /* General style */
 :root{
   --small-text-size:16px;
+  --text-color-w:#FFF;
+  --text-color-b:#000;
 }
 html::selection {
   background-color: #ffd15b;
@@ -122,7 +124,7 @@ ul {
   background-color: #fff085;
   padding-block: 100px 20px;
   position: relative;
-  border-block: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .section-1 .container::before {
   content: "";
@@ -980,4 +982,72 @@ background-color: #eff6ff;
 }
 .footer .container .copyright .policy ul li a:hover{
   color: #ffdf20;
+}
+#toggle{
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ div label{
+  background-color: #fff;
+  color: #000;
+}
+input[type="checkbox"]:checked ~ div,input[type="checkbox"]:checked ~ .section-1 .togle{
+  background-color: #181714;
+  color: #dbeafe;
+}
+input[type="checkbox"]:checked ~ .section-1 .navbar,input[type="checkbox"]:checked ~ .section-1 .header .navbar .links .anchors .child{
+  background-color: #000;
+}
+input[type="checkbox"]:checked ~ .section-1 .navbar a{
+  color: #dbeafe;
+}
+input[type="checkbox"]:checked ~ .section-2 .container .articles .cards-2 .card-2 .line {
+  color: black;
+  border: #FFF;
+}
+input[type="checkbox"]:checked ~ .section-2 .container .articles .cards-2 .card-2 .line:hover{
+  box-shadow: 5px 5px white;
+}
+input[type="checkbox"]:checked ~ .section-3 .container .cards .card{
+  background-color: #000;
+}
+input[type="checkbox"]:checked ~ .section-4 .container .content-4 .rebels .cards .card{
+  background-color: #000;
+}
+input[type="checkbox"]:checked ~ .footer,input[type="checkbox"]:checked ~ .footer .container ul li a,input[type="checkbox"]:checked ~ .footer {
+  background-color: #818181;
+  color: #000;
+}
+input[type="checkbox"]:checked ~ .footer .container .summery{
+  border-color: #000;
+}
+input[type="checkbox"]:checked ~ div .toggle{
+  background-color: white;
+}
+input[type="checkbox"]:checked ~ div .toggle .ball{
+  background-color: black;
+}
+.toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #FFF;
+  font-size: .7rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: .625rem;
+  transition: color .3s;
+}
+.toggle .ball{
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: white;
+  transition: width .3s,height .3s,color .3s;
+}
+.toggle .ball:hover{
+  width: 100%;
+  height: 100%;
 }
