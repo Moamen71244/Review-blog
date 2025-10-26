@@ -587,6 +587,8 @@ ul {
   font-weight: 900;
 }
 .section-2 .container .articles .cards-2 .card-2 .line {
+  font-size: .8rem;
+  font-weight: 600;
   padding: 10px 20px;
   border: 2px solid black;
   transition: box-shadow 0.3s, transform 0.3s;
@@ -953,7 +955,11 @@ background-color: #eff6ff;
   border-left: 2px solid #FFf;
   border-right: 1.5px solid #FFf;
   border-bottom: 1.5px solid #FFf;
-  
+}
+.footer .container .summery .newsletter input::placeholder{
+  font-size: .7rem;
+  color: #dbeafe;
+  opacity: .7;
 }
 .footer .container .summery .newsletter input:focus-within{
   border-color:#ffdf20;
@@ -986,7 +992,6 @@ background-color: #eff6ff;
 #toggle{
   display: none;
 }
-
 input[type="checkbox"]:checked ~ div label{
   background-color: #fff;
   color: #000;
