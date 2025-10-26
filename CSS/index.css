@@ -630,6 +630,31 @@ ul {
   background-color: #ffd230;
   border-block: 4px solid black;
 }
+.section-3 .container{
+  position: relative;
+}
+.section-3 .container::before {
+  content: "";
+  position: absolute;
+  transform: rotate(-50deg);
+  opacity: 0.35;
+  top: .2rem;
+  right: 1rem;
+  width: 7.25rem;
+  height: 7.25rem;
+  background-color: rgba(25, 0, 255, 0.29);
+}
+.section-3 .container .cards::before {
+  content: "";
+  position: absolute;
+  transform: rotate(-50deg);
+  opacity: 0.35;
+  bottom: -1rem;
+  left: -2rem;
+  width: 7.2rem;
+  height: 7.25rem;
+  background-color: rgba(255, 60, 0, 0.269);
+}
 .section-3 .container .cards{
   margin-top: 50px;
   gap: 2rem;
@@ -955,29 +980,4 @@ background-color: #eff6ff;
 }
 .footer .container .copyright .policy ul li a:hover{
   color: #ffdf20;
-}
-
-
-
-
-
-
-
-.test1 {
-  background-color: red;
-}
-.test3 {
-  background-color: green;
-}
-.test2 {
-  background-color: rgb(17, 0, 255);
-}
-.test4 {
-  background-color: yellow;
-}
-.test5 {
-  background-color: rgb(230, 0, 255);
-}
-.test6 {
-  background-color: red;
 }
