@@ -133,7 +133,7 @@
     .section-1 .header .navbar{
         width: 80%;
     }
-    .navbar .links{
+    .navbar .links a{
         display: none;
     }
     .section-1 .header .navbar .links-in,.section-1 .header .navbar .btn-in {
@@ -159,4 +159,5 @@
         gap: 1.25rem;
     }
   
+
 } 
